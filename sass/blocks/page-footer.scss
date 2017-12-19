@@ -95,7 +95,11 @@
 	text-decoration: none;
 }
 
-
+.page-footer__insurance a:hover,
+.page-footer__country a:hover,
+.page-footer__useful a:hover {
+	color: #72c500;
+}
 
 .page-footer__contacts {
 	position: relative;
