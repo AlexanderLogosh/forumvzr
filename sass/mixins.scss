@@ -1,12 +1,9 @@
-@mixin container() {
-	width: 320px;
+@mixin container-fluid() {
 	margin: 0 auto;
 
 	@media ($tablet-widths) {
-		width: 640px;
+		max-width: 1170px;
 	}
 
-	@media ($desktop-widths) {
-		width: 960px;
-	} 
+	
 }

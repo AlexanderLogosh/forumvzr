@@ -2,18 +2,20 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ForumVZR</title>
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header class="page-header">
-		<img class="page-header__logo" src="" alt="">
-		<span class="page-header__title">Самое важное в туристической страховке  &raquo;</span>
-		<form action="" method="get">
-			<input class="page-header__search" type="text" name="search" value="Поиск">	
-		</form>
+		<div class="page-header__wrapper">
+			<img class="page-header__logo" src="./img/logo.png" width="216px" height="26px" alt="logo">
+			<span class="page-header__title">Самое важное в туристической страховке  &raquo;</span>
+			<form class="page-header__form" action="" method="get">
+				<input class="page-header__search" type="text" name="search" value="Поиск">	
+			</form>
+		</div>
 	</header>
 	<main>
 		<section class="ratings">
@@ -126,49 +128,61 @@
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__insurance">
-			<a href="#">Страховка для выезда за границу</a>
-			<a href="#">Страховка для визы</a>
-			<a href="#">Страховка для шенгенской визы</a>
-			<a href="#">Страховка для путешествий</a>
-			<a href="#">Туристическая страховка</a>
-			<a href="#">Медицинская страховка для выезда за границу</a>
-			<a href="#">Страховка для выезда за границу на год</a>
-			<a href="#">Страховка для беременных при выезде за границу</a> 
+		<div class="page-footer__wrapper">
+			<ul class="page-footer__breadcrumbs">
+					<li>VZR.RU&nbsp;&nbsp;&gt;</li>
+					<li>Стахование&nbsp;&nbsp;&gt;</li>
+					<li>Туристическая страховка</li>
+			</ul>
+			<div class="page-footer__insurance">
+				<b>Страховка в ВЗР</b>
+				<a href="#">Страховка для выезда за границу</a>
+				<a href="#">Страховка для визы</a>
+				<a href="#">Страховка для шенгенской визы</a>
+				<a href="#">Страховка для путешествий</a>
+				<a href="#">Туристическая страховка</a>
+				<a href="#">Медицинская страховка для выезда за границу</a>
+				<a href="#">Страховка для выезда за границу на год</a>
+				<a href="#">Страховка для беременных при выезде за границу</a> 
+			</div>
+			<div class="page-footer__country">
+				<b>Выбор страны</b>
+				<a href="#">ВЗР в Россию</a>
+				<a href="#">ВЗР в Казахстан</a>
+				<a href="#">ВЗР в Украину</a>
+				<a href="#">ВЗР в Турцию</a>
+				<a href="#">ВЗР в Испанию</a>
+				<a href="#">ВЗР в Белоруссию</a>
+				<a href="#">ВЗР в Германию</a>
+				<a href="#">ВЗР в Болгарию</a>
+				<a href="#">ВЗР в Финляндию</a>
+				<a href="#">ВЗР в Таиланд</a>
+			</div>
+			<div class="page-footer__useful">
+				<b>Полезное о страховании</b>
+				<a href="#">Отзывы о Каско</a>
+			  <a href="#">Отзывы об ОСАГО</a>
+			  <a href="#">Отзывы о ВЗР</a>
+			  <a href="#">Новости страхования</a>
+			  <a href="#">Каталог страховых компаний</a>
+			  <a href="#">Путеводитель по КАСКО</a>
+			  <a href="#">Путеводитель по ОСАГО</a>
+			  <a href="#">Путеводитель по ВЗР</a>
+			  <a href="#">Путеводитель по Страхованию недвижимости</a>
+			  <a href="#">Автострахование</a>
+			  <a href="#">Выбрать город</a> 
+			</div>
+			<div class="page-footer__contacts">
+				<img class="page-footer__logo" src="./img/logo-dark.png" width="212" height="26" alt="">
+				<article class="social-btns">
+					<a class="social-btns__item social-btns__item--vk" href="#">Вконтакте</a>
+					<a class="social-btns__item social-btns__item--tw" href="#">Твиттер</a>
+					<a class="social-btns__item social-btns__item--od" href="#">Одноклассники</a>
+					<a class="social-btns__item social-btns__item--fb" href="#">Фейсбук</a>
+					<a class="social-btns__item social-btns__item--t" href="#">Телеграм</a>
+				</article>
+			</div>
 		</div>
-		<div class="page-footer__country">
-			<a href="#">ВЗР в Россию</a>
-			<a href="#">ВЗР в Казахстан</a>
-			<a href="#">ВЗР в Украину</a>
-			<a href="#">ВЗР в Турцию</a>
-			<a href="#">ВЗР в Испанию</a>
-			<a href="#">ВЗР в Белоруссию</a>
-			<a href="#">ВЗР в Германию</a>
-			<a href="#">ВЗР в Болгарию</a>
-			<a href="#">ВЗР в Финляндию</a>
-			<a href="#">ВЗР в Таиланд</a>
-		</div>
-		<div class="page-footer__useful">
-			<a href="#">Отзывы о Каско</a>
-		  <a href="#">Отзывы об ОСАГО</a>
-		  <a href="#">Отзывы о ВЗР</a>
-		  <a href="#">Новости страхования</a>
-		  <a href="#">Каталог страховых компаний</a>
-		  <a href="#">Путеводитель по КАСКО</a>
-		  <a href="#">Путеводитель по ОСАГО</a>
-		  <a href="#">Путеводитель по ВЗР</a>
-		  <a href="#">Путеводитель по Страхованию недвижимости</a>
-		  <a href="#">Автострахование</a>
-		  <a href="#">Выбрать город</a> 
-		</div>
-		<article class="social-btns">
-			<img class="social-btns__logo" src="" alt="">
-			<a class="social-btns__item social-btns__item--vk" href="#">Вконтакте</a>
-			<a class="social-btns__item social-btns__item--tw" href="#">Твиттер</a>
-			<a class="social-btns__item social-btns__item--od" href="#">Одноклассники</a>
-			<a class="social-btns__item social-btns__item--fb" href="#">Фейсбук</a>
-			<a class="social-btns__item social-btns__item--t" href="#">Телеграм</a>
-		</article>
 	</footer>
 </body>
 </html>
