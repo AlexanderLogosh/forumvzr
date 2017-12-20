@@ -2,6 +2,17 @@ body {
   font-family: TTNorms, sans-serif;
   background: #f3f3f3; }
 
+main {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 6%; }
+  @media (min-width: 768px) {
+    main {
+      max-width: 1170px; } }
+  @media (min-width: 768px) {
+    main {
+      padding: 0; } }
+
 .visualy-hidden {
   position: absolute;
   width: 1px;
@@ -70,6 +81,7 @@ body {
           align-items: center;
   padding-top: 21px;
   padding-bottom: 15px;
+  min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .page-header__wrapper {
@@ -149,6 +161,7 @@ body {
           align-items: left;
   padding: 0 11px;
   padding-top: 28px;
+  min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .page-footer__wrapper {
@@ -298,9 +311,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  @media (min-width: 768px) {
+    .ratings {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (min-width: 1170px) {
+    .ratings {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .ratings__title {
   position: relative;
@@ -338,9 +366,19 @@ body {
 .ratings-block {
   padding-top: 13px;
   padding-bottom: 25px;
+  margin-bottom: 20px;
   background: white;
   border-radius: 20px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .ratings-block {
+      margin-bottom: 28px;
+      -ms-flex-preferred-size: 47%;
+          flex-basis: 47%; } }
+  @media (min-width: 1170px) {
+    .ratings-block {
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%; } }
 
 .ratings-block__title {
   position: relative;
@@ -365,7 +403,7 @@ body {
 .ratings-block__table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 300px;
+  width: 100%;
   margin-bottom: 28px; }
   .ratings-block__table tr {
     display: -webkit-box;
@@ -445,7 +483,7 @@ body {
   width: 163px;
   text-align: center;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   color: black;
