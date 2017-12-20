@@ -8,3 +8,36 @@
 
 	
 }
+
+@mixin white-green-line() {
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 24px;
+		margin-left: -100px;
+		width: 205px;
+		height: 4px;
+		background: white;
+		z-index: 10;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 24px;
+		margin-left: -40px;
+		width: 80px;
+		height: 4px;
+		background-image: linear-gradient(90deg, #4a7a07, #72c500);
+		z-index: 11;
+	}
+
+	@media (min-width: 768px) {
+		&::before,
+		&::after {
+			bottom: 31px;
+		}
+	}
+}

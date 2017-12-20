@@ -364,12 +364,13 @@ main {
     background-image: linear-gradient(90deg, #4a7a07, #72c500);
     z-index: 11; }
   @media (min-width: 768px) {
+    .ratings__title::before, .ratings__title::after {
+      bottom: 31px; } }
+  @media (min-width: 768px) {
     .ratings__title {
       padding: 28px 0 47px;
       font-size: 30px;
-      line-height: 39px; }
-      .ratings__title::before, .ratings__title::after {
-        bottom: 31px; } }
+      line-height: 39px; } }
 
 .ratings-block {
   padding-top: 13px;
@@ -560,7 +561,7 @@ main {
           justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 15px 0 27px;
+  padding: 16px 0 27px;
   margin-bottom: 20px;
   background: white;
   border-radius: 20px;
@@ -576,9 +577,12 @@ main {
     background-size: 32px 27px; }
   @media (min-width: 768px) {
     .reviews {
+      padding: 29px 0 30px;
       margin-bottom: 0;
       -ms-flex-preferred-size: 47%;
-          flex-basis: 47%; } }
+          flex-basis: 47%; }
+      .reviews::before {
+        top: 116px; } }
   @media (min-width: 1170px) {
     .reviews {
       -ms-flex-preferred-size: 48%;
@@ -601,6 +605,16 @@ main {
     height: 16px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#4b7c07), to(#72c500));
     background-image: linear-gradient(#4b7c07, #72c500); }
+  @media (min-width: 768px) {
+    .reviews__title {
+      padding-left: 46px;
+      font-size: 25px;
+      line-height: 32.5px; }
+      .reviews__title::before {
+        left: 36px;
+        top: 6px;
+        width: 3px;
+        height: 22px; } }
 
 .reviews__add-review {
   position: relative;
@@ -613,6 +627,12 @@ main {
   font-weight: 400;
   line-height: 15.5px;
   color: black; }
+  @media (min-width: 768px) {
+    .reviews__add-review {
+      padding-left: 22px;
+      padding-right: 48px;
+      font-size: 14px;
+      line-height: 18px; } }
 
 .reviews__plus {
   position: absolute;
@@ -643,13 +663,17 @@ main {
 
 .reviews__about {
   padding: 6px 0 12px;
-  margin-top: 7px;
-  margin-bottom: 16px;
+  margin-top: 17px;
+  margin-bottom: 22px;
   width: 100%;
   font-size: 15px;
   font-weight: 500;
   line-height: 19.5px;
   background: #fafafa; }
+  @media (min-width: 768px) {
+    .reviews__about {
+      font-size: 22px;
+      line-height: 28.5px; } }
 
 .reviews__text {
   padding: 0 10px;
@@ -657,3 +681,78 @@ main {
   font-size: 14px;
   font-style: italic;
   line-height: 18px; }
+  @media (min-width: 768px) {
+    .reviews__text {
+      font-size: 20px;
+      line-height: 26px; } }
+
+.news__title {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-top: -3px;
+  padding: 28px 0 36px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700; }
+  .news__title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    margin-left: -100px;
+    width: 205px;
+    height: 4px;
+    background: white;
+    z-index: 10; }
+  .news__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    margin-left: -40px;
+    width: 80px;
+    height: 4px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#4a7a07), to(#72c500));
+    background-image: linear-gradient(90deg, #4a7a07, #72c500);
+    z-index: 11; }
+  @media (min-width: 768px) {
+    .news__title::before, .news__title::after {
+      bottom: 31px; } }
+  @media (min-width: 768px) {
+    .news__title {
+      padding: 28px 0 47px;
+      margin-top: 23px;
+      font-size: 30px;
+      line-height: 39px; } }
+
+.news__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.news__item {
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 20px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .news__item {
+      margin-bottom: 29px; } }
+  @media (min-width: 1170px) {
+    .news__item {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; } }
