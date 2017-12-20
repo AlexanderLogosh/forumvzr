@@ -497,6 +497,9 @@ main {
   .ratings-block__table .col-3 {
     width: 25%;
     text-align: left; }
+  @media (min-width: 768px) {
+    .ratings-block__table {
+      margin-bottom: 8px; } }
 
 .btn {
   position: relative;
@@ -531,10 +534,81 @@ main {
   background: transparent; }
 
 @media (min-width: 768px) {
-  margin-bottom: 28px;
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%; }
+  .btn {
+    width: 200px;
+    height: 50px; }
+  .btn__content {
+    padding: 15px 30px;
+    width: 198px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 18px; } }
 
-@media (min-width: 1170px) {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%; }
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 20px 27px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 20px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .reviews {
+      margin-bottom: 0;
+      -ms-flex-preferred-size: 47%;
+          flex-basis: 47%; } }
+  @media (min-width: 1170px) {
+    .reviews {
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%; } }
+
+.reviews__title {
+  position: relative;
+  padding-left: 8px;
+  text-transform: uppercase;
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 21.5px; }
+  .reviews__title::before {
+    content: "";
+    display: table;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 2px;
+    height: 16px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4b7c07), to(#72c500));
+    background-image: linear-gradient(#4b7c07, #72c500); }
+
+.reviews__add-review {
+  display: block;
+  width: 80px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.5px;
+  color: black; }
+
+.reviews__about {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.5px; }
+
+.reviews__text {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px; }
