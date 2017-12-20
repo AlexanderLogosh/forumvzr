@@ -294,17 +294,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .ratings__title {
   position: relative;
@@ -326,7 +322,7 @@ body {
     width: 205px;
     height: 4px;
     background: white;
-    index: 10; }
+    z-index: 10; }
   .ratings__title::after {
     content: "";
     position: absolute;
@@ -337,16 +333,19 @@ body {
     height: 4px;
     background-image: -webkit-gradient(linear, left top, right top, from(#4a7a07), to(#72c500));
     background-image: linear-gradient(90deg, #4a7a07, #72c500);
-    index: 11; }
+    z-index: 11; }
 
 .ratings-block {
   padding-top: 13px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   background: white;
-  border-radius: 20px; }
+  border-radius: 20px;
+  text-align: center; }
 
 .ratings-block__title {
   position: relative;
+  padding-left: 9px;
+  margin-bottom: 19px;
   text-align: center;
   text-transform: uppercase;
   font-size: 17px;
@@ -356,18 +355,18 @@ body {
     content: "";
     display: table;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 52px;
+    top: 4px;
     width: 2px;
     height: 16px;
-    background-image: linear-gradient #4b7c07, #72c500; }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4b7c07), to(#72c500));
+    background-image: linear-gradient(#4b7c07, #72c500); }
 
 .ratings-block__table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 300px; }
-  .ratings-block__table th {
-    background: #fafafa; }
+  width: 300px;
+  margin-bottom: 28px; }
   .ratings-block__table tr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -378,26 +377,81 @@ body {
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    index: 10; }
+            justify-content: space-between; }
+  .ratings-block__table th {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 0;
+    width: 50%;
+    height: 37px;
+    text-align: left;
+    font-size: 14;
+    line-height: 18px;
+    font-weight: 400;
+    color: #bababa;
+    background: #fafafa; }
+  .ratings-block__table th:first-child {
+    padding-left: 6%;
+    width: 75%; }
+  .ratings-block__table th:last-child {
+    width: 25%; }
+  .ratings-block__table td {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 14px 0;
+    min-height: 36px;
+    font-size: 14;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000c20; }
+  .ratings-block__table .col-1 {
+    position: relative;
+    padding-right: 5px;
+    width: 14%;
+    text-align: right;
+    font-size: 13;
+    line-height: 17px;
+    font-weight: 500;
+    color: white;
+    background: url("../img/half-circle.png") no-repeat;
+    background-size: 37px 28px;
+    background-position: top 8px right -16px; }
+  .ratings-block__table .col-2 {
+    padding-left: 15px;
+    width: 61%;
+    text-align: left; }
+  .ratings-block__table .col-3 {
+    width: 25%;
+    text-align: left; }
 
 .btn {
   position: relative;
-  index: 10;
-  padding: 16px 34px;
-  font-size: 13px;
-  line-height: 17px;
-  font-weight: 400;
-  background: white;
-  border-radius: 40px; }
-
-.btn::before {
-  content: "";
-  display: table;
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  padding: 19px 65px;
+  display: inline-block;
+  width: 165px;
+  height: 41px;
+  margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, from(#4a7a07), to(#72c500));
   background-image: linear-gradient(90deg, #4a7a07, #72c500);
   border-radius: 40px; }
+
+.btn__content {
+  position: absolute;
+  display: block;
+  left: 1px;
+  top: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 11px 30px;
+  width: 163px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  color: black;
+  background: white;
+  border-radius: 40px; }
+
+.btn__content:hover {
+  color: white;
+  background: transparent; }
