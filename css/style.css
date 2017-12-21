@@ -783,7 +783,18 @@ main {
     color: #17ba01; }
   .news__item img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    border-radius: 30px; }
+  .news__item a:hover img,
+  .news__item a:hover img {
+    border: 2px solid #72c500;
+    margin-top: -4px;
+    margin-left: -4px; }
+  .news__item a:focus img,
+  .news__item a:focus img {
+    border: 2px solid #17ba01;
+    margin-top: -4px;
+    margin-left: -4px; }
   @media (min-width: 768px) {
     .news__item {
       display: -webkit-box;
