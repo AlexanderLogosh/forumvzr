@@ -9,6 +9,30 @@
 	
 }
 
+/*@mixin left-green-line($leftx: 0, $top-c: 3px, 
+											$width: 2px, $height: 16px, $M-width: 3px, 
+											$M-height: 22px, $M-left: 0, $M-top: 0;) {
+
+	&::before {
+		content: "";
+		display: table;
+		position: absolute;
+		left: $left;
+		top: $top-c;
+		width: $width;
+		height: $height;
+		background-image: linear-gradient(#4b7c07, #72c500);
+
+		@media (min-width: 768px) {
+			left: $M-left;
+			top: 0;
+			width: 3px;
+			height: 22px;
+		}
+	}
+}
+*/
+
 @mixin white-green-line() {
 	&::before {
 		content: "";
