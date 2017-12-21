@@ -1,0 +1,167 @@
+.reviews {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 16px 0 27px;
+	margin-bottom: 20px;
+	background: white;
+	border-radius: 20px;
+	text-align: center;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 20px;
+		top: 78px;
+		width: 32px;
+		height: 27px;
+		background: url("../img/quotes.png");
+		background-size: 32px 27px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 29px 0 30px;
+		margin-bottom: 0;
+		flex-basis: 47%;
+
+		&::before {
+			top: 116px;
+		}
+	}
+
+	@media (min-width: 1170px) {
+		flex-basis: 48%;
+	}
+}
+
+.reviews__title {
+	position: relative;
+	padding-left: 28px;
+	text-transform: uppercase;
+	font-size: 16.5px;
+	font-weight: 700;
+	line-height: 21.5px;
+
+	&::before {
+		content: "";
+		display: table;
+		position: absolute;
+		left: 20px;
+		top: 2px;
+		width: 2px;
+		height: 16px;
+		background-image: linear-gradient(#4b7c07, #72c500);
+	}
+
+	@media (min-width: 768px) {
+		padding-left: 46px;
+		font-size: 25px;
+		line-height: 32.5px;
+
+		&::before {
+			left: 36px;
+			top: 6px;
+			width: 3px;
+			height: 22px;
+		}
+	}
+}
+
+.reviews__add-review {
+	position: relative;
+	display: block;
+	width: 80px;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15.5px;
+	color: black;
+
+	&:hover {
+		color: #72c500;
+	}
+
+	&:focus {
+		color: #17ba01;
+	}
+
+	@media (min-width: 768px) {
+		padding-left: 22px;
+		padding-right: 48px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+}
+
+.reviews__plus {
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width: 17px;
+	height: 17px;
+	border-radius: 20px;
+	background: #72c500;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 3px;
+		top: 7px;
+		width: 11px;
+		height: 3px;
+		background: white;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 3px;
+		top: 7px;
+		width: 11px;
+		height: 3px;
+		background: white;
+		transform: rotate(90deg);
+	}
+}
+
+.reviews__about {
+	padding: 6px 0 12px;
+	margin-top: 17px;
+	margin-bottom: 22px;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 19.5px;
+	background: #fafafa;
+
+	@media (min-width: 768px) {
+		font-size: 22px;
+		line-height: 28.5px;
+	}
+}
+
+.reviews__text {
+	padding: 0 10px;
+	margin-bottom: 29px;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 18px;
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+		line-height: 26px;
+	}
+}
+
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 1170px) {
+
+}

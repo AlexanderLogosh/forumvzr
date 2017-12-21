@@ -1,10 +1,13 @@
 .DS_Store
+node_modules/
+design/
+*.zip
+*.rar
 .idea
 *.ai
 *.log
 *.pdf
-*.psd
-* 
-node_modules/
-npm-debug.*
+*.sublime*
+css/*.css
 Thumbs.db
+.publish/

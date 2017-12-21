@@ -1,0 +1,35 @@
+.internal-page {
+	display: flex;
+	flex-direction: column;
+	@include container-fluid();
+	margin-top: 20px;
+
+	@media (min-width: 800px) {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	@media (min-width: 1170px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+
+.internal-page__content {
+	box-sizing: border-box;
+	padding: 10px 20px 25px;
+	margin-bottom: 17px;
+	background: white;
+	border-radius: 20px;
+	text-align: left;
+	flex-basis: 93%;
+
+	@media (min-width: 800px) {
+		flex-basis: 64%;
+	}
+
+	@media (min-width: 1170px) {
+		flex-basis: 66.5%;
+	}
+}
