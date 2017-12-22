@@ -37,17 +37,20 @@
 	background-image: linear-gradient(90deg,#72c500,#4a7a07);
 }
 
-@media (min-width: 768px) {
- 	.btn {
-		width: 200px;
-		height: 50px;
-	}
+.ratings {
+	@media (min-width: 768px) {
+	 	.btn {
+			width: 200px;
+			height: 50px;
+		}
 
-	.btn__content {
-		padding: 15px 30px;
-		width: 198px;
-		height: 48px;
-		font-size: 15px;
-		line-height: 18px;
+		.btn__content {
+			padding: 15px 30px;
+			width: 198px;
+			height: 48px;
+			font-size: 15px;
+			line-height: 18px;
+		}
 	}
 }
+	

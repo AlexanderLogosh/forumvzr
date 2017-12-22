@@ -5,16 +5,6 @@
 	background: white;
 	border-radius: 20px;
 	text-align: center;
-
-	@media (min-width: 768px) {
-		padding-top: 15px;
-		margin-bottom: 28px;
-		flex-basis: 47%;
-	}
-
-	@media (min-width: 1170px) {
-		flex-basis: 48%;
-	}
 }
 
 .ratings-block__title {
@@ -39,16 +29,6 @@
 		background-image: linear-gradient(#4b7c07, #72c500);
 	}
 
-	@media (min-width: 768px) {
-		font-size: 25px;
-		margin-bottom: 22px;
-
-		&::before {
-			top: 0;
-			width: 3px;
-			height: 22px;
-		}
-	}
 }
 
 .ratings-block__table {
@@ -73,13 +53,6 @@
  		font-weight: 400;
  		color: #bababa;
  		background: #fafafa;
-
- 		@media (min-width: 768px) {
- 			height: 45px;
- 			font-size: 16.5;
- 			line-height: 21.5px;
- 		}
-
  	}
 
 	th:first-child {
@@ -104,20 +77,12 @@
 			color: #000c20;
 			text-decoration: none;
 		}
-
 		a:hover {
 			color: #72c500;
 		}
-
 		a:focus {
 			color: #17ba01;
 		}
-
- 		@media (min-width: 768px) {
- 			height: 66px;
- 			font-size: 20px;
- 			line-height: 26px;
- 		}
 	}
 
  	.col-1 {
@@ -132,15 +97,6 @@
  		background: url("../img/half-circle.png") no-repeat;
  		background-size: 37px 28px;
  		background-position: top 8px right -16px;
-		
-		@media (min-width: 768px) {
- 			height: 66px;
- 			font-size: 18.3px;
- 			line-height: 24px;
- 			background: url("../img/half-circle.png") no-repeat;
-	 		background-size: 40px 32px;
-	 		background-position: top 10px right -16px;
- 		}
  	}
 
  	.col-2 {
@@ -153,13 +109,70 @@
  		width: 25%;
  		text-align: left;
  	}
-
- 	@media (min-width: 768px) {
-		margin-bottom: 8px;
- 	}
 }
 
+
+
+
+
+.ratings .ratings-block {
+	@media (min-width: 768px) {
+		padding-top: 15px;
+		margin-bottom: 28px;
+		flex-basis: 47%;
+
+		.ratings-block__title {
+			font-size: 25px;
+			margin-bottom: 22px;
+
+			&::before {
+				top: 0;
+				width: 3px;
+				height: 22px;
+			}
+		}
+
+		.ratings-block__table {
+			margin-bottom: 8px;
+		}
+
+		.ratings-block__table th { 	
+	 		height: 45px;
+	 		font-size: 16.5;
+	 		line-height: 21.5px;
+	 	}
+
+	 	.ratings-block__table td { 	
+	 		height: 66px;
+	 		font-size: 20px;
+	 		line-height: 26px;
+	 	}
+
+	 	.ratings-block__table col-1 { 	
+	 		height: 66px;
+	 		font-size: 18.3px;
+	 		line-height: 24px;
+	 		background: url("../img/half-circle.png") no-repeat;
+		 	background-size: 40px 32px;
+		 	background-position: top 10px right -16px;
+	 	}
+	}
+}
+
+.ratings .ratings-block {
+	@media (min-width: 1170px) {
+		flex-basis: 48%;
+	}
+}
+
+
+
+
+
 .sidebar .ratings-block {
+	box-sizing: border-box;
+	flex-basis: 100%;
+	margin-bottom: 17px;
 
 	@media (min-width: 700px) {
 		flex-basis: 47%;
@@ -167,5 +180,44 @@
 
 	@media (min-width: 800px) {
 		flex-basis: 100%;
+		margin-bottom: 21px;
+		flex-basis: 47%;
+
+		.ratings-block__title {
+			font-size: 20px;
+			margin-bottom: 26px;
+
+			&::before {
+				top: 0;
+				width: 3px;
+				height: 20px;
+			}
+		}
+
+		.ratings-block__table {
+			margin-bottom: 8px;
+		}
+
+		.ratings-block__table th { 
+			box-sizing: border-box;
+	 		height: 45px;
+	 		font-size: 16.5;
+	 		line-height: 21.5px;
+	 	}
+
+	 	.ratings-block__table td { 	
+	 		height: 66px;
+	 		font-size: 17px;
+	 		line-height: 22 px;
+	 	}
+
+	 	.ratings-block__table col-1 { 	
+	 		height: 66px;
+	 		font-size: 16.3px;
+	 		line-height: 20px;
+	 		background: url("../img/half-circle.png") no-repeat;
+		 	background-size: 40px 32px;
+		 	background-position: top 10px right -16px;
+	 	}
 	}
 }

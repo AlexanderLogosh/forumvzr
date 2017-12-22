@@ -1,8 +1,8 @@
 .internal-page {
 	display: flex;
 	flex-direction: column;
-	@include container-fluid();
-	margin-top: 20px;
+	justify-content: space-around;
+	padding-top: 20px;
 
 	@media (min-width: 800px) {
 		flex-direction: row;
@@ -10,26 +10,28 @@
 	}
 
 	@media (min-width: 1170px) {
-		flex-direction: row;
 		justify-content: space-between;
+		padding-top: 35px;
 	}
 }
 
 
 .internal-page__content {
+	flex-basis: 93%;
 	box-sizing: border-box;
 	padding: 10px 20px 25px;
 	margin-bottom: 17px;
 	background: white;
 	border-radius: 20px;
 	text-align: left;
-	flex-basis: 93%;
+
 
 	@media (min-width: 800px) {
 		flex-basis: 64%;
+		margin-bottom: 22px;
 	}
 
 	@media (min-width: 1170px) {
-		flex-basis: 66.5%;
+
 	}
 }
