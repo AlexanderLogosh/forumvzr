@@ -185,10 +185,11 @@
 
 		.ratings-block__title {
 			font-size: 20px;
-			margin-bottom: 26px;
+			margin-bottom: 23px;
+			margin-top: 16px;
 
 			&::before {
-				top: 0;
+				top: 1px;
 				width: 3px;
 				height: 20px;
 			}
@@ -200,13 +201,15 @@
 
 		.ratings-block__table th { 
 			box-sizing: border-box;
+			margin-bottom: 20px;
 	 		height: 45px;
 	 		font-size: 16.5;
 	 		line-height: 21.5px;
 	 	}
 
-	 	.ratings-block__table td { 	
-	 		height: 66px;
+	 	.ratings-block__table td { 
+	 		box-sizing: border-box;
+	 		height: 50px;
 	 		font-size: 17px;
 	 		line-height: 22 px;
 	 	}
