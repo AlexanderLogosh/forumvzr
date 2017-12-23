@@ -20,13 +20,48 @@
 	</header>
 	<main class="internal-page">
 		<section class="internal-page__content">
-			<h1>Добавить отзыв о страховой компании</h1>
-			<p class="internal-page__litle-p">Честность очень важна для нас. Мы проводим огромную работу, чтобы убедиться, 
-			что отзыв написан реальным человеком и является полезным.</p>
+			<h1></h1>
+			<p class="internal-page__litle-p"></p>
 
 			<form class="review-form" action="" method="post">
-				<input type="text" required>
+				<fieldset>
+			    <legend class="review-form__title">Добавить отзыв о страховой компании</legend>
+			    <p class="review-form__description">Честность очень важна для нас. Мы проводим огромную работу, чтобы убедиться, что отзыв написан реальным человеком и является полезным.</p>
+			    
+			    <label>
+			    	<span>Страховая компания</span>
+			    	<input type="text" name="" placeholder="Название страховой" required>
+			    </label>
+			    <label>
+			    	<span>Ассист компании</span>
+			    	<input type="text" name="" placeholder="Назавание компании" required>
+			    </label>
+			    <label>
+			    	<span>Заголовок отзыва</span>
+			    	<input type="text" name="" placeholder="Кратко опишите тему отзыва" required>
+			    </label>
+			    <label>
+			    	<span>Ваш отзыв</span>
+			    	<textarea placeholder="Подробно опишите свой опыт взаимодействия с страховой компанией. Расскажите, как вас обслуживали. Какой результат вы ожидали получить, и был ли он достигнут?  Предоставленная услуга соответствовала результату?"></textarea>
+			    </label>
+				</fieldset>
+
+				<fieldset>
+			    <legend class="review-form__title">Дополнительные данные</legend>
+			    <p class="review-form__description">Укажите номер полиса и ФИО для идентификации в страховой компании. Данная информация будет доступна только администратору и сотруднику этой компании.</p>
+			    <label>
+			    	<span>ФИО</span>
+			    	<input type="text" name="" placeholder="Иванов Иван Иванович" required>
+			    </label>
+			    <label>
+			    	<span>№ полиса</span>
+			    	<input type="text" name="" placeholder="Номер" required>
+			    </label>
+			    <textarea placeholder="Комментарий для страховой компании..."></textarea>
+				</fieldset>
 			</form>
+
+
 		</section>
 
 		<section class="sidebar">
