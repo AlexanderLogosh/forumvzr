@@ -8,7 +8,7 @@
 	text-align: left;
 
 	@media (min-width: 800px) {
-		padding: 5px 20px 23px;
+		padding: 5px 0 23px;
 		margin-bottom: 21px;
 		
 	}
@@ -38,10 +38,10 @@
 	}
 
 	@media (min-width: 800px) {
-		font-size: 20px;
-		line-height: 26px;
 		margin-top: 13.4px;
 		margin-bottom: 2px;
+		font-size: 20px;
+		line-height: 26px;
 
 		&::before {
 			top: 3px;
@@ -54,23 +54,24 @@
 .helpful-info-block__list {
 	margin: 0;
 	padding: 0;
-	padding-top: 0px;
-	padding-left: 35px;
-	border-top: 1px solid red;
+	padding-top: 4px;
+	padding-left: 40px;
+	border-top: 1px solid #fafafa;
 }
 
 .helpful-info-block__list li {
 	list-style: none;
-	margin: 20px 0;
+	margin: 25px 0;
 }
 
 .helpful-info-block__list a {
 	position: relative;
 	color: black;
 	text-decoration: none;
-	font-size: 17px;
-	line-height: 22px;
+	font-size: 15px;
+	line-height: 20px;
 	font-weight: 400;
+	color: #323232;
 
 
 	&:hover {
@@ -87,5 +88,10 @@
 		color: #72c500;
 		font-size: 30px;
 		line-height: 10px;
+	}
+
+	@media (min-width: 800px) {
+		font-size: 20px;
+		line-height: 26px;
 	}
 }
