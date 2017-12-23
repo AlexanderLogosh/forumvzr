@@ -1,4 +1,5 @@
 .internal-page {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -75,15 +76,16 @@
 
 
 	@media (min-width: 800px) {
-		flex-basis: 64%;
+		flex-basis: 64.5%;
 		margin-bottom: 22px;
 		padding: 20px 40px 25px;
 		font-size: 18px;
 		line-height: 23.5px;
 
 		h1 {
-			font-size: 30px;
-			line-height: 39px;
+			font-size: 28px;
+			line-height: 38px;
+			letter-spacing: -0.02em;
 		}
 
 		p {

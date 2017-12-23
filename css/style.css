@@ -27,6 +27,8 @@ body {
   background: #f3f3f3; }
 
 main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 6%; }
@@ -88,8 +90,9 @@ main {
   overflow: hidden; }
 
 .page-header {
-  width: 100%;
-  background: url("../img/header-bg.jpg") no-repeat;
+  min-width: 320px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2d8ea3), to(#5b9906));
+  background-image: linear-gradient(90deg, #2d8ea3, #5b9906);
   background-size: 100% 100%; }
 
 .page-header__wrapper {
@@ -103,9 +106,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 320px;
   padding-top: 21px;
   padding-bottom: 15px;
   min-width: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
@@ -192,6 +198,8 @@ main {
           align-items: left;
   padding: 0 11px;
   padding-top: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 320px;
   margin: 0 auto; }
   @media (min-width: 768px) {
@@ -968,8 +976,8 @@ main {
               align-items: stretch;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-      -ms-flex-preferred-size: 33.5%;
-          flex-basis: 33.5%; } }
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%; } }
 
 .subscribe-block {
   -ms-flex-preferred-size: 100%;
@@ -1136,6 +1144,8 @@ main {
       line-height: 26px; } }
 
 .internal-page {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1207,15 +1217,16 @@ main {
       background: #72c500; }
   @media (min-width: 800px) {
     .internal-page__content {
-      -ms-flex-preferred-size: 64%;
-          flex-basis: 64%;
+      -ms-flex-preferred-size: 64.5%;
+          flex-basis: 64.5%;
       margin-bottom: 22px;
       padding: 20px 40px 25px;
       font-size: 18px;
       line-height: 23.5px; }
       .internal-page__content h1 {
-        font-size: 30px;
-        line-height: 39px; }
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.02em; }
       .internal-page__content p {
         margin: 35px 0; }
       .internal-page__content b {
