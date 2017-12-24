@@ -1356,6 +1356,8 @@ main {
     resize: none; }
   .review-form .review-form__conditions {
     position: relative;
+    display: inline-block;
+    padding-left: 25px;
     margin: 0 20px;
     margin-bottom: 37px;
     text-align: left;
@@ -1376,7 +1378,7 @@ main {
     .review-form .review-form__conditions::before {
       content: "✔";
       position: absolute;
-      left: -25px;
+      left: 0;
       top: 13px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -1424,6 +1426,7 @@ main {
         font-size: 29px;
         line-height: 38px; }
       .review-form .review-form__title--rating {
+        margin-bottom: 15px;
         text-align: left;
         font-size: 15px;
         line-height: 19.5px; }
