@@ -57,4 +57,15 @@
 		}
 	}
 }
-	
+
+.review-form {
+	.btn {
+		display: block;
+		margin: 24px auto;
+
+		@media (min-width: 430px) {
+			display: inline-block;
+			margin: 12px 15px;
+		}
+	}
+}
