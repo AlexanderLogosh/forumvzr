@@ -2,10 +2,10 @@
 	flex-basis: 100%;
 	padding: 0 20px 19px;
 	margin-bottom: 17px;
-	height: auto;
 	background: white;
 	border-radius: 20px;
 	text-align: left;
+	flex-shrink: 10;
 
 	@media (min-width: 800px) {
 		padding: 5px 20px 23px;
@@ -23,7 +23,7 @@
 	font-size: 20px;
 	line-height: 26px;
 	font-weight: 700;
-	color: black;
+	color: #000c20;
 	text-decoration: none;
 
 	&::before {

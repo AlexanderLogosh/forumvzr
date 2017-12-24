@@ -1,0 +1,46 @@
+.rating-input {
+  display: flex;
+   position: relative;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.rating-input__description {
+  order: 11;
+  flex-basis: 100%;
+}
+
+.rating-input label {
+  position: relative;
+  margin-right: 5px;
+  height: 16px;
+  width: 15px;
+  cursor: pointer;
+  background: url('../img/star-grey.png') no-repeat;
+  background-size: 16px 15px;
+  background-position: 0 0;
+  z-index: 1;  
+}
+
+.rating-input input:checked ~ label, 
+.rating-input label:hover, 
+.rating-input label:hover ~ label {
+  background: url('../img/star.png') no-repeat;
+  background-size: 16px 15px;
+}
+
+
+.rating-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  
+  width: 43px;
+  height: 40px;
+  
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+

@@ -1,0 +1,131 @@
+.review-form {
+  box-sizing: border-box;
+  padding-top: 12px;
+
+  fieldset {
+    width: 100%;
+    padding: 0;
+    padding-top: 5px;
+    margin-bottom: 19px;
+    border: none;
+    //border: 2px solid yellow; 
+  }
+
+  .review-form__title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000c20;
+  }
+
+  .review-form__description {
+    margin: 5px 0 23px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #363636;
+  }
+
+  span {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #2e2e2e;
+   // border: 1px solid blue;
+  }
+
+  label {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    width: 100%;
+    //border: 1px solid red;
+  }
+ 
+  input,
+  textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #72c500;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.5px;
+    border-image: none;
+    outline:0;
+
+    &:hover {
+      border: 1px solid #17ba01;
+    }
+
+    &:focus {
+      border: 1px solid #2c8ea6;
+    }
+  } 
+
+  textarea {
+    margin-bottom: 0;
+    height: 182px;
+    resize: none;
+  }
+
+
+
+  @media (min-width: 500px) {
+    padding-top: 29px;
+
+    .review-form__title {
+      font-size: 29px;
+      line-height: 38px;
+    }
+
+    .review-form__description {
+      margin: 1px 0 41px;
+      font-size: 15px;
+      line-height: 19.5px;
+    }
+
+    .review-form__label--half {
+      float: left;
+      width: 47%;
+    }
+
+     .review-form__label--right {
+      float: right;
+     }
+
+    label {
+      margin-bottom: 22px;
+    }
+
+    span { 
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    input,
+    textarea {
+      padding: 12.5px 20px;
+      font-size: 14px;
+      line-height: 18px;
+    } 
+    textarea {
+      height: 140px;
+    }
+  }
+}

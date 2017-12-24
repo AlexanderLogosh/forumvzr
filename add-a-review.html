@@ -11,57 +11,178 @@
 <body>
 	<header class="page-header">
 		<div class="page-header__wrapper">
-			<a class="page-header__logo-link" href="#"><img class="page-header__logo" src="./img/logo.png" width="216px" height="26px" alt="logo"></a>
+			<a class="page-header__logo-link" href="#"><img class="page-header__logo" src="./img/logo.png" width="216" height="26" alt="logo"></a>
 			<span class="page-header__title">Самое важное в туристической страховке  &raquo;</span>
-			<form class="page-header__form" action="" method="get">
+			<form class="page-header__form" action="#" method="get">
 				<input class="page-header__search" type="text" name="search" placeholder="Поиск">	
 			</form>
 		</div>
 	</header>
 	<main class="internal-page">
 		<section class="internal-page__content">
-			<h1></h1>
-			<p class="internal-page__litle-p"></p>
 
-			<form class="review-form" action="" method="post">
+			<form class="review-form" action="#" method="post">
 				<fieldset>
 			    <legend class="review-form__title">Добавить отзыв о страховой компании</legend>
 			    <p class="review-form__description">Честность очень важна для нас. Мы проводим огромную работу, чтобы убедиться, что отзыв написан реальным человеком и является полезным.</p>
 			    
-			    <label>
+			    <label class="review-form__label review-form__label--half">
 			    	<span>Страховая компания</span>
-			    	<input type="text" name="" placeholder="Название страховой" required>
+			    	<input type="text" name="company" placeholder="Название страховой" required>
 			    </label>
-			    <label>
+
+			    <label class="review-form__label review-form__label--half  review-form__label--right">
 			    	<span>Ассист компании</span>
-			    	<input type="text" name="" placeholder="Назавание компании" required>
+			    	<input type="text" name="assist-company" placeholder="Назавание компании" required>
 			    </label>
 			    <label>
 			    	<span>Заголовок отзыва</span>
-			    	<input type="text" name="" placeholder="Кратко опишите тему отзыва" required>
+			    	<input type="text" name="comment-title" placeholder="Кратко опишите тему отзыва" required>
 			    </label>
 			    <label>
 			    	<span>Ваш отзыв</span>
-			    	<textarea placeholder="Подробно опишите свой опыт взаимодействия с страховой компанией. Расскажите, как вас обслуживали. Какой результат вы ожидали получить, и был ли он достигнут?  Предоставленная услуга соответствовала результату?"></textarea>
+			    	<textarea name="comment" placeholder="Подробно опишите свой опыт взаимодействия с страховой компанией. Расскажите, как вас обслуживали. Какой результат вы ожидали получить, и был ли он достигнут?  Предоставленная услуга соответствовала результату?"></textarea>
 			    </label>
 				</fieldset>
 
 				<fieldset>
 			    <legend class="review-form__title">Дополнительные данные</legend>
 			    <p class="review-form__description">Укажите номер полиса и ФИО для идентификации в страховой компании. Данная информация будет доступна только администратору и сотруднику этой компании.</p>
-			    <label>
+			    <label class="review-form__label review-form__label--half">
 			    	<span>ФИО</span>
-			    	<input type="text" name="" placeholder="Иванов Иван Иванович" required>
+			    	<input type="text" name="name" placeholder="Иванов Иван Иванович" required>
 			    </label>
-			    <label>
+			    <label class="review-form__label review-form__label--half review-form__label--right">
 			    	<span>№ полиса</span>
-			    	<input type="text" name="" placeholder="Номер" required>
+			    	<input type="text" name="policy-number" placeholder="Номер" required>
 			    </label>
-			    <textarea placeholder="Комментарий для страховой компании..."></textarea>
+			    <textarea name="comment-for-company" placeholder="Комментарий для страховой компании..."></textarea>
+				</fieldset>
+
+				<fieldset class="review-form__rating">
+			    <legend class="review-form__title review-form__title--rating">Отзыв с оценкой</legend>
+			    	
+						<div class="rating-input">
+							<span class="rating-input__description">Удобство оформления</span>
+						  <input id="convenience-star-10" type="radio" name="conveniences" value="rating-10"/>
+						  <label for="convenience-star-10"></label>
+						  <input id="convenience-star-9" type="radio" name="convenience" value="rating-9"/>
+						  <label for="convenience-star-9"></label>
+						  <input id="convenience-star-8" type="radio" name="convenience" value="rating-8"/>
+						  <label for="convenience-star-8"></label>
+						  <input id="convenience-star-7" type="radio" name="convenience" value="rating-7"/>
+						  <label for="convenience-star-7"></label>
+						  <input id="convenience-star-6" type="radio" name="convenience" value="rating-6"/>
+						  <label for="convenience-star-6"></label>
+						  <input id="convenience-star-5" type="radio" name="convenience" value="rating-5"/>
+						  <label for="convenience-star-5"></label>
+						  <input id="convenience-star-4" type="radio" name="convenience" value="rating-4"/>
+						  <label for="convenience-star-4"></label>
+						  <input id="convenience-star-3" type="radio" name="convenience" value="rating-3"/>
+						  <label for="convenience-star-3"></label>
+						  <input id="convenience-star-2" type="radio" name="convenience" value="rating-2"/>
+						  <label for="convenience-star-2"></label>
+						  <input id="convenience-star-1" type="radio" name="convenience" value="rating-1"/>
+						  <label for="convenience-star-4"></label>
+						</div>
+	
+						<div class="rating-input">
+							<span class="rating-input__description">Честность условий</span>
+						  <input id="honesty-star-10" type="radio" name="honesty" value="rating-10"/>
+						  <label for="honesty-star-10"></label>
+						  <input id="honesty-star-9" type="radio" name="honesty" value="rating-9"/>
+						  <label for="honesty-star-9"></label>
+						  <input id="honesty-star-8" type="radio" name="honesty" value="rating-8"/>
+						  <label for="honesty-star-8"></label>
+						  <input id="honesty-star-7" type="radio" name="honesty" value="rating-7"/>
+						  <label for="honesty-star-7"></label>
+						  <input id="honesty-star-6" type="radio" name="honesty" value="rating-6"/>
+						  <label for="honesty-star-6"></label>
+						  <input id="honesty-star-5" type="radio" name="honesty" value="rating-5"/>
+						  <label for="honesty-star-5"></label>
+						  <input id="honesty-star-4" type="radio" name="honesty" value="rating-4"/>
+						  <label for="honesty-star-4"></label>
+						  <input id="honesty-star-3" type="radio" name="honesty" value="rating-3"/>
+						  <label for="honesty-star-3"></label>
+						  <input id="honesty-star-2" type="radio" name="honesty" value="rating-2"/>
+						  <label for="honesty-star-2"></label>
+						  <input id="honesty-star-1" type="radio" name="honesty" value="rating-1"/>
+						  <label for="honesty-star-1"></label>
+						</div>
+	
+						<div class="rating-input">
+							<span class="rating-input__description">Оперативность выплат</span>
+						  <input id="fast-payouts-star-10" type="radio" name="fast-payouts" value="rating-10"/>
+						  <label for="fast-payouts-star-10"></label>
+						  <input id="fast-payouts-star-9" type="radio" name="fast-payouts" value="rating-9"/>
+						  <label for="fast-payouts-star-9"></label>
+						  <input id="fast-payouts-star-8" type="radio" name="fast-payouts" value="rating-8"/>
+						  <label for="fast-payouts-star-8"></label>
+						  <input id="fast-payouts-star-7" type="radio" name="fast-payouts" value="rating-7"/>
+						  <label for="fast-payouts-star-7"></label>
+						  <input id="fast-payouts-star-6" type="radio" name="fast-payouts" value="rating-6"/>
+						  <label for="fast-payouts-star-6"></label>
+						  <input id="fast-payouts-star-5" type="radio" name="fast-payouts" value="rating-5"/>
+						  <label for="fast-payouts-star-5"></label>
+						  <input id="fast-payouts-star-4" type="radio" name="fast-payouts" value="rating-4"/>
+						  <label for="fast-payouts-star-4"></label>
+						  <input id="fast-payouts-star-3" type="radio" name="fast-payouts" value="rating-3"/>
+						  <label for="fast-payouts-star-3"></label>
+						  <input id="fast-payouts-star-2" type="radio" name="fast-payouts" value="rating-2"/>
+						  <label for="fast-payouts-star-2"></label>
+						  <input id="fast-payouts-star-1" type="radio" name="fast-payouts" value="rating-1"/>
+						  <label for="fast-payouts-star-1"></label>
+						</div>
+	
+						<div class="rating-input">
+							<span class="rating-input__description">Полнота выплат</span>
+						  <input id="completeness-of-payments-star-10" type="radio" name="completeness-of-payments" value="rating-10"/>
+						  <label for="completeness-of-payments-star-10"></label>
+						  <input id="completeness-of-payments-star-9" type="radio" name="completeness-of-payments" value="rating-9"/>
+						  <label for="completeness-of-payments-star-9"></label>
+						  <input id="completeness-of-payments-star-8" type="radio" name="completeness-of-payments" value="rating-8"/>
+						  <label for="completeness-of-payments-star-8"></label>
+						  <input id="completeness-of-payments-star-7" type="radio" name="completeness-of-payments" value="rating-7"/>
+						  <label for="completeness-of-payments-star-7"></label>
+						  <input id="completeness-of-payments-star-6" type="radio" name="completeness-of-payments" value="rating-6"/>
+						  <label for="completeness-of-payments-star-6"></label>
+						  <input id="completeness-of-payments-star-5" type="radio" name="completeness-of-payments" value="rating-5"/>
+						  <label for="completeness-of-payments-star-5"></label>
+						  <input id="completeness-of-payments-star-4" type="radio" name="completeness-of-payments" value="rating-4"/>
+						  <label for="completeness-of-payments-star-4"></label>
+						  <input id="completeness-of-payments-star-3" type="radio" name="completeness-of-payments" value="rating-3"/>
+						  <label for="completeness-of-payments-star-3"></label>
+						  <input id="completeness-of-payments-star-2" type="radio" name="completeness-of-payments" value="rating-2"/>
+						  <label for="completeness-of-payments-star-2"></label>
+						  <input id="completeness-of-payments-star-1" type="radio" name="completeness-of-payments" value="rating-1"/>
+						  <label for="completeness-of-payments-star-1"></label>
+						</div>
+	
+						<div class="rating-input">
+							<span class="rating-input__description">Сервис и урегулирование</span>
+						  <input id="service-star-10" type="radio" name="service" value="rating-10"/>
+						  <label for="service-star-10"></label>
+						  <input id="service-star-9" type="radio" name="service" value="rating-9"/>
+						  <label for="service-star-9"></label>
+						  <input id="service-star-8" type="radio" name="service" value="rating-8"/>
+						  <label for="service-star-8"></label>
+						  <input id="service-star-7" type="radio" name="service" value="rating-7"/>
+						  <label for="service-star-7"></label>
+						  <input id="service-star-6" type="radio" name="service" value="rating-6"/>
+						  <label for="service-star-6"></label>
+						  <input id="service-star-5" type="radio" name="service" value="rating-5"/>
+						  <label for="service-star-5"></label>
+						  <input id="service-star-4" type="radio" name="service" value="rating-4"/>
+						  <label for="service-star-4"></label>
+						  <input id="service-star-3" type="radio" name="service" value="rating-3"/>
+						  <label for="service-star-3"></label>
+						  <input id="service-star-2" type="radio" name="service" value="rating-2"/>
+						  <label for="service-star-2"></label>
+						  <input id="service-star-1" type="radio" name="service" value="rating-1"/>
+						  <label for="service-star-1"></label>
+						</div>	
 				</fieldset>
 			</form>
-
-
 		</section>
 
 		<section class="sidebar">

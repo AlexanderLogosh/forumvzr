@@ -45,7 +45,7 @@
 	
 	
 	a {
-		color: black;
+		color: #000c20;
 		text-decoration: none;
 	}
 
@@ -112,7 +112,7 @@
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 22px;
-	color: black;
+	color: #000c20;
 
 	&::before {
 		content: "";
@@ -144,7 +144,7 @@
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 22px;
-	color: black;
+	color: #000c20;
 
 	@media (min-width: 768px) {
 		font-size: 17px;

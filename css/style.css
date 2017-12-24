@@ -166,11 +166,16 @@ main {
   width: 240px;
   height: 25px;
   padding: 0 30px 0 15px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 30px;
   font-weight: 300;
   font-size: 12px;
-  color: #ababab; }
+  color: #ababab;
+  outline: 0; }
+  .page-header__search:hover {
+    border-color: #2c8ea6; }
+  .page-header__search:focus {
+    border-color: #2c8ea6; }
   @media (min-width: 1070px) {
     .page-header__search {
       height: 43px;
@@ -554,7 +559,9 @@ main {
           box-sizing: border-box;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 17px; }
+  margin-bottom: 17px;
+  -ms-flex-negative: 10;
+      flex-shrink: 10; }
   @media (min-width: 700px) {
     .sidebar .ratings-block {
       -ms-flex-preferred-size: 47%;
@@ -621,7 +628,7 @@ main {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  color: black;
+  color: #000c20;
   background: white;
   border-radius: 40px; }
 
@@ -726,7 +733,7 @@ main {
   font-size: 12px;
   font-weight: 400;
   line-height: 15.5px;
-  color: black; }
+  color: #000c20; }
   .reviews__add-review:hover {
     color: #72c500; }
   .reviews__add-review:focus {
@@ -860,7 +867,7 @@ main {
   border-radius: 20px;
   text-align: left; }
   .news__item a {
-    color: black;
+    color: #000c20;
     text-decoration: none; }
   .news__item a:hover,
   .news__item a:hover {
@@ -917,7 +924,7 @@ main {
   font-size: 17px;
   font-weight: 700;
   line-height: 22px;
-  color: black; }
+  color: #000c20; }
   .news__item-title::before {
     content: "";
     display: table;
@@ -944,7 +951,7 @@ main {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  color: black; }
+  color: #000c20; }
   @media (min-width: 768px) {
     .news__text {
       font-size: 17px;
@@ -984,10 +991,11 @@ main {
       flex-basis: 100%;
   padding: 0 20px 19px;
   margin-bottom: 17px;
-  height: auto;
   background: white;
   border-radius: 20px;
-  text-align: left; }
+  text-align: left;
+  -ms-flex-negative: 10;
+      flex-shrink: 10; }
   @media (min-width: 800px) {
     .subscribe-block {
       padding: 5px 20px 23px;
@@ -1003,7 +1011,7 @@ main {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: black;
+  color: #000c20;
   text-decoration: none; }
   .subscribe-block__title::before {
     content: "";
@@ -1120,7 +1128,7 @@ main {
 
 .helpful-info-block__list a {
   position: relative;
-  color: black;
+  color: #000c20;
   text-decoration: none;
   font-size: 15px;
   line-height: 20px;
@@ -1191,7 +1199,7 @@ main {
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
-    color: black; }
+    color: #000c20; }
   .internal-page__content p {
     margin: 26px 0; }
   .internal-page__content b {
@@ -1237,3 +1245,148 @@ main {
         margin: 35px 0; }
       .internal-page__content li {
         margin: 16px 0; } }
+
+.review-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 12px; }
+  .review-form fieldset {
+    width: 100%;
+    padding: 0;
+    padding-top: 5px;
+    margin-bottom: 19px;
+    border: none; }
+  .review-form .review-form__title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000c20; }
+  .review-form .review-form__description {
+    margin: 5px 0 23px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #363636; }
+  .review-form span {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #2e2e2e; }
+  .review-form label {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    width: 100%; }
+  .review-form input,
+  .review-form textarea {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding: 9px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #72c500;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.5px;
+    -o-border-image: none;
+       border-image: none;
+    outline: 0; }
+    .review-form input:hover,
+    .review-form textarea:hover {
+      border: 1px solid #17ba01; }
+    .review-form input:focus,
+    .review-form textarea:focus {
+      border: 1px solid #2c8ea6; }
+  .review-form textarea {
+    margin-bottom: 0;
+    height: 182px;
+    resize: none; }
+  @media (min-width: 500px) {
+    .review-form {
+      padding-top: 29px; }
+      .review-form .review-form__title {
+        font-size: 29px;
+        line-height: 38px; }
+      .review-form .review-form__description {
+        margin: 1px 0 41px;
+        font-size: 15px;
+        line-height: 19.5px; }
+      .review-form .review-form__label--half {
+        float: left;
+        width: 47%; }
+      .review-form .review-form__label--right {
+        float: right; }
+      .review-form label {
+        margin-bottom: 22px; }
+      .review-form span {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 21px; }
+      .review-form input,
+      .review-form textarea {
+        padding: 12.5px 20px;
+        font-size: 14px;
+        line-height: 18px; }
+      .review-form textarea {
+        height: 140px; } }
+
+.rating-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+
+.rating-input__description {
+  -webkit-box-ordinal-group: 12;
+      -ms-flex-order: 11;
+          order: 11;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+.rating-input label {
+  position: relative;
+  margin-right: 5px;
+  height: 16px;
+  width: 15px;
+  cursor: pointer;
+  background: url("../img/star-grey.png") no-repeat;
+  background-size: 16px 15px;
+  background-position: 0 0;
+  z-index: 1; }
+
+.rating-input input:checked ~ label,
+.rating-input label:hover,
+.rating-input label:hover ~ label {
+  background: url("../img/star.png") no-repeat;
+  background-size: 16px 15px; }
+
+.rating-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 43px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 0; }

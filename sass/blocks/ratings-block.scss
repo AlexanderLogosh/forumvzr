@@ -173,6 +173,7 @@
 	box-sizing: border-box;
 	flex-basis: 100%;
 	margin-bottom: 17px;
+	flex-shrink: 10;
 
 	@media (min-width: 700px) {
 		flex-basis: 47%;
