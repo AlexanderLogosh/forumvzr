@@ -1249,7 +1249,19 @@ main {
 .review-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 12px; }
+  padding-top: 12px;
+  /*.review-form__rating {
+    background: white;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 100px;
+        z-index: 1;
+        width: 94%;
+        height: 40px;
+        background: #eaffce;
+      }
+    }*/ }
   .review-form fieldset {
     width: 100%;
     padding: 0;
@@ -1265,6 +1277,18 @@ main {
     font-weight: 700;
     line-height: 21px;
     color: #000c20; }
+  .review-form .review-form__title--rating {
+    position: relative;
+    padding: 12px 32px;
+    border-radius: 20px;
+    background: #eaffce;
+    text-transform: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2e2e2e;
+    z-index: 5; }
   .review-form .review-form__description {
     margin: 5px 0 23px;
     padding: 0;
@@ -1321,6 +1345,10 @@ main {
       .review-form .review-form__title {
         font-size: 29px;
         line-height: 38px; }
+      .review-form .review-form__title--rating {
+        text-align: left;
+        font-size: 15px;
+        line-height: 19.5px; }
       .review-form .review-form__description {
         margin: 1px 0 41px;
         font-size: 15px;
@@ -1353,40 +1381,60 @@ main {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse; }
-
-.rating-input__description {
-  -webkit-box-ordinal-group: 12;
-      -ms-flex-order: 11;
-          order: 11;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.rating-input label {
-  position: relative;
-  margin-right: 5px;
-  height: 16px;
-  width: 15px;
-  cursor: pointer;
-  background: url("../img/star-grey.png") no-repeat;
-  background-size: 16px 15px;
-  background-position: 0 0;
-  z-index: 1; }
-
-.rating-input input:checked ~ label,
-.rating-input label:hover,
-.rating-input label:hover ~ label {
-  background: url("../img/star.png") no-repeat;
-  background-size: 16px 15px; }
-
-.rating-input input {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  width: 43px;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  z-index: 0; }
+      flex-wrap: wrap-reverse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px; }
+  .rating-input .rating-input__description {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #363636; }
+  .rating-input label {
+    position: relative;
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    background: url("../img/star-grey.png") no-repeat;
+    background-size: contain; }
+  .rating-input input:checked ~ label,
+  .rating-input label:hover,
+  .rating-input label:hover ~ label {
+    background: url("../img/star.png") no-repeat;
+    background-size: contain; }
+  .rating-input input {
+    display: none;
+    /*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    */ }
+  @media (min-width: 500px) {
+    .rating-input .rating-input__description {
+      margin-bottom: 9px;
+      font-size: 17px;
+      line-height: 22px; } }
+  @media (min-width: 500px) and (min-width: 770px) {
+    .rating-input .rating-input__description {
+      -ms-flex-preferred-size: 34%;
+          flex-basis: 34%; } }
+  @media (min-width: 500px) {
+    .rating-input label {
+      width: 23px;
+      height: 22px; } }

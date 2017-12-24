@@ -11,6 +11,19 @@
     //border: 2px solid yellow; 
   }
 
+  /*.review-form__rating {
+    background: white;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 100px;
+        z-index: 1;
+        width: 94%;
+        height: 40px;
+        background: #eaffce;
+      }
+    }*/
+
   .review-form__title {
     margin: 0;
     padding: 0;
@@ -20,6 +33,20 @@
     font-weight: 700;
     line-height: 21px;
     color: #000c20;
+  }
+
+  .review-form__title--rating {
+    position: relative;
+    padding:  12px 32px;
+    border-radius: 20px;
+    background: #eaffce;
+    text-transform: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2e2e2e;
+    z-index: 5;    
   }
 
   .review-form__description {
@@ -92,7 +119,13 @@
       font-size: 29px;
       line-height: 38px;
     }
-
+    
+    .review-form__title--rating {
+      
+      text-align: left;
+      font-size: 15px;
+      line-height: 19.5px;
+    }
     .review-form__description {
       margin: 1px 0 41px;
       font-size: 15px;
