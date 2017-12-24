@@ -1250,6 +1250,7 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 12px;
+  text-align: center;
   /*.review-form__rating {
     background: white;
       &::before {
@@ -1267,7 +1268,8 @@ main {
     padding: 0;
     padding-top: 5px;
     margin-bottom: 19px;
-    border: none; }
+    border: none;
+    text-align: left; }
   .review-form .review-form__title {
     margin: 0;
     padding: 0;
@@ -1339,6 +1341,41 @@ main {
     margin-bottom: 0;
     height: 182px;
     resize: none; }
+  .review-form .review-form__conditions {
+    position: relative;
+    margin: 0 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a2a2a2; }
+    .review-form .review-form__conditions a {
+      color: #318f95;
+      padding-bottom: 1px;
+      text-decoration: none; }
+      .review-form .review-form__conditions a:hover {
+        color: #72c500;
+        border-bottom: 1px solid #72c500; }
+      .review-form .review-form__conditions a:focus {
+        color: #17ba01;
+        border-bottom: 1px solid #17ba01; }
+    .review-form .review-form__conditions::before {
+      content: "✔";
+      position: absolute;
+      left: -25px;
+      top: 13px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-top: 2px;
+      padding-left: 3px;
+      width: 15px;
+      height: 15px;
+      color: white;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 10px;
+      border-radius: 20px;
+      background: #318f95; }
   @media (min-width: 500px) {
     .review-form {
       padding-top: 29px; }
@@ -1370,7 +1407,15 @@ main {
         font-size: 14px;
         line-height: 18px; }
       .review-form textarea {
-        height: 140px; } }
+        height: 140px; }
+      .review-form .review-form__conditions {
+        text-align: center;
+        font-size: 15px;
+        line-height: 19.5px; }
+        .review-form .review-form__conditions::before {
+          left: -25px;
+          top: 3px;
+          padding-left: 4px; } }
 
 .rating-input {
   display: -webkit-box;
@@ -1388,6 +1433,7 @@ main {
       flex-wrap: wrap-reverse;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: left;
   padding: 0 20px; }
   .rating-input .rating-input__description {
     -webkit-box-ordinal-group: 12;
@@ -1427,7 +1473,6 @@ main {
     */ }
   @media (min-width: 500px) {
     .rating-input .rating-input__description {
-      margin-bottom: 9px;
       font-size: 17px;
       line-height: 22px; } }
   @media (min-width: 500px) and (min-width: 770px) {
