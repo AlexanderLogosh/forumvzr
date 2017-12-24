@@ -623,6 +623,9 @@ main {
           box-sizing: border-box;
   padding: 11px 30px;
   width: 163px;
+  outline: none;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
   text-align: center;
   text-decoration: none;
   font-size: 14px;
@@ -1376,6 +1379,8 @@ main {
       line-height: 10px;
       border-radius: 20px;
       background: #318f95; }
+    .review-form .review-form__conditions .btn {
+      display: block; }
   @media (min-width: 500px) {
     .review-form {
       padding-top: 29px; }
@@ -1413,7 +1418,7 @@ main {
         font-size: 15px;
         line-height: 19.5px; }
         .review-form .review-form__conditions::before {
-          left: -25px;
+          left: 5px;
           top: 3px;
           padding-left: 4px; } }
 

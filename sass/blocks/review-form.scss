@@ -154,6 +154,10 @@
       border-radius: 20px;
       background: #318f95;
    } 
+
+   .btn {
+    display: block;
+   }
   }
 
 
@@ -212,7 +216,7 @@
       line-height: 19.5px;
 
        &::before {
-        left: -25px;
+        left: 5px;
         top: 3px;
         padding-left: 4px;
      } 
