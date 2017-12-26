@@ -34,6 +34,19 @@
 }
 */
 
+@mixin link-effects($underline: underline) {
+	text-decoration: none;
+	&:hover {
+		color: #72c500;
+		text-decoration: $underline;
+	}
+	&:focus {
+		color: #17ba01;
+		text-decoration: $underline;
+	}
+
+}
+
 @mixin white-green-line() {
 	&::before {
 		content: "";

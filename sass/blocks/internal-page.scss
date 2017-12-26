@@ -50,27 +50,100 @@
 		line-height: 18px;
 		color: #363636;
 	}
+	
+	a {
+		color: #318f95;
+		@include link-effects();
+	}
 
-	ul {
+	.internal-page__list {
 		margin: 26px 0;
 		padding: 0;
+
+		li {
+			list-style: none;
+			margin: 4px 0;
+
+			&:before {
+				content: "";
+				display: inline-block;
+				margin: 2px 0;
+				margin-right: 5px;
+				width: 5px;
+				height: 5px;
+				border-radius: 15px;
+				background: #72c500;
+			}
+		}
+
 	}
+	
+	.internal-page__search {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 43px;
+		margin-bottom: 30px;
+		width: 96%;
 
-	li {
-		list-style: none;
-		margin: 4px 0;
+		@media (min-width: 450px){
+			margin: 43px auto 20px;
+			width: 280px;
+		}
 
-		&:before {
-			content: "";
-			display: inline-block;
-			margin: 2px 0;
-			margin-right: 5px;
-			width: 5px;
-			height: 5px;
-			border-radius: 15px;
-			background: #72c500;
+		@media (min-width: 700px) {
+			margin: 33px 0 20px;
+			margin-right: 15px;
+			margin-left: auto;
 		}
 	}
+
+	.internal-page__search:before {
+   	content: "";
+		position: absolute;
+		right: 0;
+		bottom: -2px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50px;
+		background: #6fbe02 url("../img/magnifier.svg") no-repeat;
+		background-position: center;
+		background-size: 16px 16px;
+
+		@media (min-width: 700px) {
+			bottom: -1px;
+		}
+  }
+
+	.internal-page__search  input {
+		display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px 15px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #72c500;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.5px;
+    border-image: none;
+    outline:0;
+
+    &:hover {
+      border: 1px solid #17ba01;
+    }
+
+    &:focus {
+      border: 1px solid #2c8ea6;
+    }
+
+    @media (min-width: 700px) {
+			padding: 9px 20px;
+			padding-right: 50px;
+      font-size: 14px;
+      line-height: 18px;
+		}
+  }
 
 
 
@@ -97,16 +170,39 @@
 			font-size: 18px;
 			line-height: 23.5px;
 		}
-		ul {
-			margin: 35px 0;
-		}
 
-		li {
-			margin: 16px 0;
+		.internal-page__list {
+			margin: 35px 0;
+			li {
+				margin: 16px 0;
+			}
 		}
 	}
+	
 
 	@media (min-width: 1170px) {
 
+	}
+}
+
+.internal-page__content--padding0 {
+	padding-left: 0;
+	padding-right: 0;
+
+	h1,
+	p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	@media (min-width: 800px) {
+		flex-basis: 64.5%;
+		width: 64.5%;
+
+		h1,
+		p {
+			margin-left: 35px;
+			margin-right: 35px;
+		}
 	}
 }

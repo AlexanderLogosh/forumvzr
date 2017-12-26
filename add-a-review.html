@@ -14,26 +14,36 @@
 			<a class="page-header__logo-link" href="#"><img class="page-header__logo" src="./img/logo.png" width="216" height="26" alt="logo"></a>
 			<span class="page-header__title">Самое важное в туристической страховке  &raquo;</span>
 			<form class="page-header__form" action="#" method="get">
-				<input class="page-header__search" type="text" name="search" placeholder="Поиск">	
+				<input class="page-header__search" type="text" name="header-search" placeholder="Поиск">	
 			</form>
 		</div>
 	</header>
 	<main class="internal-page">
 		<section class="internal-page__content">
 
-			<form class="review-form" action="#" method="post">
+			<form class="review-form" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset>
 			    <legend class="review-form__title">Добавить отзыв о страховой компании</legend>
 			    <p class="review-form__description">Честность очень важна для нас. Мы проводим огромную работу, чтобы убедиться, что отзыв написан реальным человеком и является полезным.</p>
 			    
-			    <label class="review-form__label review-form__label--half">
+			    <label class="review-form__label review-form__label--half review-form__select">
 			    	<span>Страховая компания</span>
-			    	<input type="text" name="company" placeholder="Название страховой" required>
+						<select class="select-events" name="company">
+			        <option value="0">Название страховой</option> 
+			        <option value="ERGO">ERGO</option> 
+			        <option value="АльфаСтрахование">АльфаСтрахование</option>
+		   		 </select>
+			    	<!-- <input type="text" name="company" placeholder="Название страховой" required> -->
 			    </label>
 
-			    <label class="review-form__label review-form__label--half  review-form__label--right">
+			    <label class="review-form__label review-form__label--half  review-form__label--right review-form__select">
 			    	<span>Ассист компании</span>
-			    	<input type="text" name="assist-company" placeholder="Назавание компании" required>
+			    	<select class="select-events"  name="assist-company">
+			        <option value="0">Назавание компании</option> 
+			        <option value="ERGO">ERGO</option> 
+			        <option value="АльфаСтрахование">АльфаСтрахование</option>
+		   		 </select>
+			    	<!-- <input type="text" name="assist-company" placeholder="Назавание компании" required> -->
 			    </label>
 			    <label>
 			    	<span>Заголовок отзыва</span>
@@ -183,7 +193,11 @@
 						</div>	
 				</fieldset>
 
-				<span class="review-form__conditions">Нажимая кнопку «Отправить», я соглашаюсь с &#160; <a href="#">Условиями передачи информации</a>.</span>
+				
+				 <label class="review-form__conditions" >
+				 	<input type="checkbox" name="conditions" value="yes" required>
+				 	<span class="review-form__conditions-description">Нажимая кнопку «Отправить», я соглашаюсь с &#160; <a href="#">Условиями передачи информации</a>.</span>
+				 </label>
 
 				<a href="#" class="review-form__rules">Правила размещения отзывов</a>
 				<a href="#" class="review-form__rules review-form__rules--second">Правила оценки отзывов</a>
@@ -338,5 +352,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+	<!-- <script src="js/script-select.js"></script>  -->
 </body>
 </html>

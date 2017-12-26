@@ -1,0 +1,33 @@
+.select-events {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #72c500;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.5px;
+    border-image: none;
+    outline: 0;
+
+    &:hover {
+        border-color: #318f95;
+    }
+
+    &:focus {
+        border-radius: 20px 20px 0 0;
+        border-color: #318f95;
+    }
+    
+    option {
+        border-color: #318f95;
+    }
+
+    @media (min-width: 500px) {
+      padding: 12.5px 20px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+}

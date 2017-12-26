@@ -72,11 +72,15 @@
 	line-height: 20px;
 	font-weight: 400;
 	color: #323232;
-
+	
+	@include link-effects(none);
 
 	&:hover {
-		color: #72c500;
 		border-bottom: 1px solid #72c500;
+	}
+
+	&:focus {
+		border-bottom: 1px solid #17ba01;;
 	}
 
 	&::before {
