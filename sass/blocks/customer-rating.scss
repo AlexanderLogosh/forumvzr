@@ -56,7 +56,13 @@
 		width: 174px;
 	}
 
-
+	.customer-rating__col-3 {
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 22px;
+  	color: white;
+		background: url("../img/blue-square.svg") no-repeat center;
+	}
 
 	.customer-rating__row-0 {
 		box-sizing: border-box;
@@ -75,16 +81,7 @@
 		width: 109px;
 	}
 
-	.customer-rating__col-3 {
-		margin: 10px 0;
-		width: 46px;
-		height: 46px;
-		font-size: 17px;
-		font-weight: 700;
-		line-height: 22px;
-		color: white;
-		background: #359ca2;
-	}
+
 
 
 

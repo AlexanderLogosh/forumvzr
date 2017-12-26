@@ -1712,6 +1712,12 @@ main {
   .customer-rating__table .customer-rating__col-2 {
     padding-left: 10px;
     width: 174px; }
+  .customer-rating__table .customer-rating__col-3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    color: white;
+    background: url("../img/blue-square.svg") no-repeat center; }
   .customer-rating__table .customer-rating__row-0 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1725,12 +1731,3 @@ main {
   .customer-rating__table .customer-rating__col-6,
   .customer-rating__table .customer-rating__col-7 {
     width: 109px; }
-  .customer-rating__table .customer-rating__col-3 {
-    margin: 10px 0;
-    width: 46px;
-    height: 46px;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 22px;
-    color: white;
-    background: #359ca2; }
