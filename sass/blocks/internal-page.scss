@@ -105,10 +105,9 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50px;
-		background: #6fbe02 url("../img/magnifier.svg") no-repeat;
+		background:url("../img/magnifier.svg") no-repeat,linear-gradient( 120deg, #72c500,  #65a709);
 		background-position: center;
-		background-size: 16px 16px;
-
+		background-size: 16px 16px, cover;
 		@media (min-width: 700px) {
 			bottom: -1px;
 		}
