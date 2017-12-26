@@ -143,8 +143,35 @@
 	height: 33px;
 	border: 1px solid #1c3c50;
 	border-radius: 35px;
+	color: #1c3c50;
+
+	&:hover {
+	border-color: #72c500;
+	background-color: #72c500;
+	}
+
+	&:focus {
+		border-color: #17ba01;
+	}
 
 	@media (min-width: 540px) {
 		margin-top: 0;
+	}
+}
+.page-footer__contacts {
+	.social-btns__item--vk {
+		background: url(../img/social-icons/vk.svg) no-repeat center;
+	}
+	.social-btns__item--tw {
+		background: url(../img/social-icons/tw.svg) no-repeat center;
+	}
+	.social-btns__item--od {
+		background: url(../img/social-icons/od.svg) no-repeat center;
+	}
+	.social-btns__item--fb {
+		background: url(../img/social-icons/fb.svg) no-repeat center;
+	}
+	.social-btns__item--t {
+		background: url(../img/social-icons/t.svg) no-repeat center;
 	}
 }
