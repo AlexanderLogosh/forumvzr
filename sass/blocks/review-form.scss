@@ -151,12 +151,12 @@
     }
 
     &::before {
-      content: "✔";
+      content: "";
       position: absolute;
       left: 0;
       top: 13px;
       box-sizing: border-box;
-      padding-top: 2px;
+      padding-top: 3px;
       padding-left: 3px;
       width: 15px;
       height: 15px;
@@ -165,11 +165,21 @@
       font-weight: 500;
       line-height: 10px;
       border-radius: 20px;
-      background: #318f95;
+      border: 1px solid #318f95;
     } 
+
+
+
   }
 
+  .review-form__conditions input:hover +   .review-form__conditions-description:before {
+    content: "✔";
+    border: 0;
+    background: #318f95;
+  }
   .review-form__conditions input:checked +   .review-form__conditions-description:before {
+    content: "✔";
+    border: 0;
     background: #17ba01;
   }
 

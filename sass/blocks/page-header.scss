@@ -101,9 +101,15 @@
 	  display: none;
 		height: 43px;
 		padding-left: 20px;
+		padding-right: 55px;
 		font-size: 14px;
+
+		&.page-header__search-input--visible {
+			display: block;
+		}
 	}
 }
+
 
 .page-header__search-btn {
 	content: "";

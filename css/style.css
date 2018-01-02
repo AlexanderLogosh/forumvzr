@@ -1,27 +1,17 @@
-@charset "UTF-8";
-/*@mixin left-green-line($leftx: 0, $top-c: 3px, 
-											$width: 2px, $height: 16px, $M-width: 3px, 
-											$M-height: 22px, $M-left: 0, $M-top: 0;) {
-
-	&::before {
-		content: "";
-		display: table;
-		position: absolute;
-		left: $left;
-		top: $top-c;
-		width: $width;
-		height: $height;
-		background-image: linear-gradient(#4b7c07, #72c500);
-
-		@media (min-width: 768px) {
-			left: $M-left;
-			top: 0;
-			width: 3px;
-			height: 22px;
-		}
-	}
-}
+/*!
+Theme Name: forumvzr
+Theme URI: http://underscores.me/
+Author: Alexandr 
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: forumvzr
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
+
+
 body {
   font-family: TTNorms, sans-serif;
   background: #f3f3f3; }
@@ -204,7 +194,10 @@ main {
       display: none;
       height: 43px;
       padding-left: 20px;
-      font-size: 14px; } }
+      padding-right: 55px;
+      font-size: 14px; }
+      .page-header__search input.page-header__search-input--visible {
+        display: block; } }
 
 .page-header__search-btn {
   content: "";
@@ -244,9 +237,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   padding: 0 11px;
   padding-top: 28px;
   -webkit-box-sizing: border-box;
@@ -318,9 +308,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   margin-bottom: 27px; }
 
 .page-footer__insurance b,
@@ -1538,13 +1525,13 @@ main {
         color: #17ba01;
         border-bottom: 1px solid #17ba01; }
     .review-form .review-form__conditions-description::before {
-      content: "✔";
+      content: "";
       position: absolute;
       left: 0;
       top: 13px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      padding-top: 2px;
+      padding-top: 3px;
       padding-left: 3px;
       width: 15px;
       height: 15px;
@@ -1553,8 +1540,14 @@ main {
       font-weight: 500;
       line-height: 10px;
       border-radius: 20px;
-      background: #318f95; }
+      border: 1px solid #318f95; }
+  .review-form .review-form__conditions input:hover + .review-form__conditions-description:before {
+    content: "✔";
+    border: 0;
+    background: #318f95; }
   .review-form .review-form__conditions input:checked + .review-form__conditions-description:before {
+    content: "✔";
+    border: 0;
     background: #17ba01; }
   .review-form .review-form__rules {
     display: block;
@@ -1794,10 +1787,6 @@ main {
     vertical-align: center;
     font-size: 15px;
     line-height: 20px; }
-  .customer-rating__table .customer-rating__col-1 {
-    width: 35px;
-    background: #f5f5f5;
-    border-top: 1px solid white; }
   .customer-rating__table .customer-rating__col-2 {
     padding-left: 10px;
     width: 174px; }
@@ -1838,6 +1827,10 @@ main {
   .customer-rating__table .customer-rating__col-6,
   .customer-rating__table .customer-rating__col-7 {
     width: 109px; }
+  .customer-rating__table .customer-rating__col-1 {
+    width: 35px;
+    background: #f5f5f5;
+    border-top: 1px solid white; }
 
 .review-block {
   -ms-flex-preferred-size: 100%;
